@@ -1,0 +1,13 @@
+# This directory is for release information only.
+/*
+!/.gitignore
+!/README.md
+!/CHANGELOG.md
+!/USAGE.txt
+!/ABOUT.md
+!/THIRD-PARTY-NOTICES.txt
+!/licenses/
+/licenses/*
+!/licenses/Node.js-LICENSE.txt
+!/licenses/Node.js-ORIGIN.json
+!/licenses/esbuild-LICENSE.txt

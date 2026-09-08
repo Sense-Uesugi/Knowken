@@ -1,0 +1,29 @@
+Knowken 1.2.0 · Sense · Windows x64
+
+简体中文
+1. 将整个 ZIP 解压到可写的文件夹，双击 Knowken.exe。
+   也可使用“启动 Knowken.vbs”或 Start-Knowken.cmd。
+2. 选择语言、字号和次要文字灰度，再看简易教程。
+3. 设置自动保存在本机；没有数据时，使用 Codex 后刷新。
+4. 关闭网页后应用仍在运行。双击“停止 Knowken.vbs”或
+   Stop-Knowken.cmd 退出，停止后再复制或移动完整目录。
+无需安装 Node.js 或下载运行依赖。详细操作见 README.md。
+
+English
+1. Extract the entire ZIP to a writable folder and open Knowken.exe.
+   You can also use “启动 Knowken.vbs” or Start-Knowken.cmd.
+2. Choose your language, text size and secondary text shade, then follow
+   the short tutorial.
+3. Preferences are saved locally. If no data appears, use Codex and refresh.
+4. Closing the page does not stop the app. Open “停止 Knowken.vbs” or
+   Stop-Knowken.cmd to stop it before copying or moving the entire folder.
+No Node.js installation or runtime downloads are needed.
+
+日本語
+1. ZIP 全体を書き込み可能なフォルダーに展開し、Knowken.exe を開きます。
+   「启动 Knowken.vbs」または Start-Knowken.cmd でも起動できます。
+2. 言語、文字サイズ、補助テキストの濃さを選び、簡単なチュートリアルに進みます。
+3. 設定はこの端末に保存されます。データがない場合は Codex を使用してから更新します。
+4. ページを閉じてもアプリは動作を続けます。「停止 Knowken.vbs」または
+   Stop-Knowken.cmd で終了してから、フォルダー全体をコピーまたは移動してください。
+Node.js のインストールや実行環境のダウンロードは不要です。
