@@ -11,3 +11,9 @@
 !/licenses/Node.js-LICENSE.txt
 !/licenses/Node.js-ORIGIN.json
 !/licenses/esbuild-LICENSE.txt
+
+!/licenses/linux-x64/
+/licenses/linux-x64/*
+!/licenses/linux-x64/Node.js-LICENSE.txt
+!/licenses/linux-x64/Node.js-ORIGIN.json
+!/licenses/linux-x64/postject-LICENSE.txt
