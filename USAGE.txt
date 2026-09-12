@@ -1,25 +1,107 @@
-Knowken 1.6.0 · Sense · Windows x64 / GNU/Linux x64
-
 简体中文
-1. 从 Releases 下载对应平台的压缩包。Windows 解压后双击 Knowken.exe；GNU/Linux 解压 .tar.gz 后在目录中执行 ./Knowken。
-2. 选择语言、字号和次要文字灰度，再看简易教程。
-3. 选择日期、模型、项目或时区；点击任务查看时间线与会话来源。
-4. 可导出 CSV 或保存当前筛选的分享 PNG；设置中可启用每日／每周目标提醒。
-5. Windows 使用 Stop-Knowken.cmd 或“停止 Knowken.vbs”退出；GNU/Linux 使用 ./Knowken --stop。无桌面环境可执行 ./Knowken --no-browser，终端会显示地址。
-Linux 需要 kernel ≥ 4.18、glibc ≥ 2.28、GLIBCXX ≥ 3.4.25；不提供 ARM 或 musl 包。
+
+Knowken 1.7.0 · Sense
+
+1. 启动
+   下载对应系统的发行包并完整解压。Windows 双击 Knowken.exe；GNU/Linux 运行 ./Knowken。请使用可写目录，Linux 目录还需允许执行。
+
+2. 首次设置
+   选择语言、字号和次要文字深浅，再跟随简易教程。偏好会保存在本机。
+
+3. 查看用量
+   选择日期、模型、项目和时区，或搜索任务。点击任务可查看小时用量时间线与会话来源。
+
+4. 切换 Token 与费用
+   在“设置 → 统计显示”中选择 Token、API 估算费用或同时显示。CSV 和分享图片沿用该选择，切换不会重新扫描日志。
+
+5. 理解估算结果
+   费用以美元显示，按 2026 年 9 月 12 日核对的官方标准短上下文文本单价换算，不代表实际账单。“—”表示无法定价，“≥”表示已知费用的下限。历史单价、长上下文、未记录的缓存写入及其他附加费用未还原；完整说明见设置。
+
+6. 刷新数据
+   有可用缓存时先显示上次统计，再后台更新。需要更新时点击“刷新数据”；开启 30 秒自动刷新会停用缓存。
+
+7. 调整表格与外观
+   悬停项目或任务表头边缘后拖动可调整列宽，首列表头的小按钮恢复自动布局。窄屏可在表格内横向滚动。列宽保存在当前浏览器，不随浏览器或端口变化迁移。语言、字号、文字深浅、主题色和深浅色模式可在设置中调整。
+
+8. 目标与分享
+   每日、每周目标始终按 Token 计数，提醒显示在应用页面中。分享图片默认隐藏任务和项目名称。
+
+9. 停止应用
+   Windows 使用 Stop-Knowken.cmd 或“停止 Knowken.vbs”；GNU/Linux 使用 ./Knowken --stop。Linux 无桌面环境时可用 ./Knowken --no-browser 查看访问地址。关闭网页不会自动停止服务。
 
 English
-1. Download the package for your platform from Releases. On Windows, extract it and open Knowken.exe; on GNU/Linux, extract the .tar.gz and run ./Knowken from the extracted directory.
-2. Choose your language, text size and secondary text shade, then follow the short tutorial.
-3. Select dates, models, projects or a time zone; select a task to view its timeline and sessions.
-4. Export a CSV or save a PNG for the current filters; enable daily or weekly page goals in Settings.
-5. On Windows, stop with Stop-Knowken.cmd or “停止 Knowken.vbs”. On GNU/Linux, stop with ./Knowken --stop. Without a desktop, use ./Knowken --no-browser to print the address.
-GNU/Linux requires kernel ≥ 4.18, glibc ≥ 2.28 and GLIBCXX ≥ 3.4.25. ARM and musl packages are not provided.
+
+Knowken 1.7.0 · Sense
+
+1. Start
+   Download the package for your system and extract it completely. On Windows, open Knowken.exe. On GNU/Linux, run ./Knowken. Use a writable directory; the Linux location must also allow execution.
+
+2. First launch
+   Choose your language, text size and secondary text shade, then follow the short tutorial. Preferences are saved locally.
+
+3. Explore usage
+   Filter by date, model, project or time zone, or search for a task. Open a task to view its hourly timeline and session sources.
+
+4. Switch display modes
+   In Settings → Usage display, choose Tokens, estimated API cost or both. CSV exports and share images follow your selection. Switching modes does not rescan logs.
+
+5. Understand estimates
+   USD estimates use official standard short-context text prices checked on September 12, 2026. They are not actual bills. “—” means unpriced; “≥” marks a known cost lower bound. Historical prices, long-context premiums, unrecorded cache writes and other additional charges are not reconstructed. See Settings for details.
+
+6. Refresh
+   Available cached results appear first while data updates in the background. Select Refresh data to update. Enabling 30-second auto-refresh disables caching.
+
+7. Adjust readability
+   Hover over a project or task column-header edge and drag to resize. The small button in the first header restores automatic widths. Narrow tables scroll horizontally. Widths are saved in the current browser and do not transfer to another browser or port. Settings includes language, text size, secondary text shade, accent color and light/dark/system appearance.
+
+8. Goals and sharing
+   Daily and weekly goals remain Token-based, with reminders displayed in the app. Share images hide task and project names by default.
+
+9. Stop
+   On Windows, use Stop-Knowken.cmd or “停止 Knowken.vbs”. On GNU/Linux, use ./Knowken --stop. Without a desktop, ./Knowken --no-browser prints the address. Closing the page does not stop the service.
 
 日本語
-1. Releases から対応するプラットフォームの圧縮ファイルを取得します。Windows は展開後に Knowken.exe を開き、GNU/Linux は .tar.gz を展開してディレクトリ内で ./Knowken を実行します。
-2. 言語、文字サイズ、補助テキストの濃さを選び、簡単なチュートリアルに進みます。
-3. 日付、モデル、プロジェクト、タイムゾーンを選び、タスクを選択してタイムラインとセッションを確認します。
-4. 現在の絞り込みを CSV または PNG で保存できます。設定で日次／週次のページ目標を有効にできます。
-5. Windows は Stop-Knowken.cmd または「停止 Knowken.vbs」で終了します。GNU/Linux は ./Knowken --stop で終了します。デスクトップがない場合は ./Knowken --no-browser でアドレスを表示します。
-GNU/Linux は kernel ≥ 4.18、glibc ≥ 2.28、GLIBCXX ≥ 3.4.25 が必要です。ARM と musl のパッケージは提供しません。
+
+Knowken 1.7.0 · Sense
+
+1. 起動
+   環境に合うパッケージをダウンロードし、すべて展開します。Windows は Knowken.exe、GNU/Linux は ./Knowken を実行します。書き込み可能な場所を使用し、Linux では実行も許可されている必要があります。
+
+2. 初回設定
+   言語、文字サイズ、補助テキストの濃さを選び、簡単なチュートリアルに進みます。設定は端末に保存されます。
+
+3. 使用量の確認
+   日付、モデル、プロジェクト、タイムゾーンで絞り込むか、タスクを検索します。タスクを開くと、時間別の使用量とセッションの内訳を確認できます。
+
+4. 表示の切り替え
+   「設定 → 使用量の表示」で、トークン、API 推定費用、両方から選びます。CSV と共有画像にも反映されます。切り替えでログを再スキャンすることはありません。
+
+5. 推定費用の見方
+   費用は、2026 年 9 月 12 日に確認した公式の標準・短コンテキスト料金に基づく USD 推定です。実際の請求額ではありません。「—」は料金不明、「≥」は既知の費用の下限を示します。過去の単価、長コンテキスト、未記録のキャッシュ書き込み、その他の追加料金は再現しません。詳細は設定で確認できます。
+
+6. 更新
+   利用できるキャッシュがあれば前回の集計を先に表示し、バックグラウンドで更新します。更新ボタンで最新のデータを確認できます。30 秒ごとの自動更新を有効にすると、キャッシュは無効になります。
+
+7. 読みやすさの調整
+   列見出しの端にマウスを重ねてドラッグすると列幅を変更できます。先頭の見出しの小さなボタンで自動調整に戻ります。狭い画面では表の中を横にスクロールできます。列幅は現在のブラウザーに保存され、別のブラウザーやポートには引き継がれません。言語、文字サイズ、補助テキストの濃さ、テーマ色、ライト／ダーク／システム設定は設定画面で変更できます。
+
+8. 目標と共有
+   日次・週次の目標はトークン数で設定し、通知はアプリのページ内に表示されます。共有画像ではタスク名とプロジェクト名を既定で隠します。
+
+9. 停止
+   Windows は Stop-Knowken.cmd または「停止 Knowken.vbs」、GNU/Linux は ./Knowken --stop で停止します。デスクトップがない場合は ./Knowken --no-browser でアドレスを確認できます。ページを閉じるだけではサービスは停止しません。
+
+平台说明
+Linux 需要 kernel ≥ 4.18、glibc ≥ 2.28、GLIBCXX ≥ 3.4.25、可用的 /proc 和现代浏览器。不提供 ARM 或 musl 包。两个平台均未签名，实测范围见 1.7.0 Release。
+
+Platform notes
+Linux requires kernel ≥ 4.18, glibc ≥ 2.28, GLIBCXX ≥ 3.4.25, /proc and a modern browser. No ARM or musl package is provided. Both packages are unsigned; see the 1.7.0 Release for the tested scope.
+
+対応環境
+Linux では kernel ≥ 4.18、glibc ≥ 2.28、GLIBCXX ≥ 3.4.25、/proc、最新のブラウザーが必要です。ARM と musl 向けは提供していません。両パッケージとも未署名です。検証範囲は 1.7.0 Release を確認してください。
+
+Knowken 读取本机现存日志，不上传对话或用量数据，不提供跨设备同步。统计可能不完整，不代表订阅额度或官方账单。
+
+Knowken reads existing local logs without uploading conversations or usage data, and does not sync across devices. Results may be incomplete and do not represent subscription limits or an official bill.
+
+Knowken は端末内の既存ログを読み取り、会話や使用量データを送信せず、端末間同期も行いません。集計は不完全な場合があり、契約上の利用枠や公式請求額を示すものではありません。
