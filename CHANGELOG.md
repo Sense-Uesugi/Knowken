@@ -1,5 +1,15 @@
 # 更新记录
 
+## 1.8.0
+
+- 新增任务代理树、缓存与费用分析、本地 JSON 价格表及导入记录、固定 Token 模型费用模拟、每月 USD 目标与月底线性估算。
+- 收入 1.7.1 的精确模型价格维护：gpt-6.1-sol、gpt-6-sol、gpt-6-luna；内置目录为 2026-10-03.1，全部 33 个基础模型核对日期为 2026-10-03。
+- 纯费用模式的项目按已知金额降序，完全未计价项目置后。
+- New: agent trees, cache/cost analysis, local JSON price catalogs with import history, fixed-Token model simulations and monthly USD goals with linear projections.
+- Includes the 1.7.1 exact-model pricing update and cost-only project ordering. Bundled catalog: 2026-10-03.1, checked October 3, 2026.
+- エージェントツリー、キャッシュ／費用分析、履歴付きローカル JSON 料金表、固定トークンのモデル費用シミュレーション、月間 USD 目標と線形推定を追加。
+- 1.7.1 の正確なモデル料金更新と費用順表示を含みます。内蔵料金表：2026-10-03.1、確認日：2026 年 10 月 3 日。
+
 ## 1.7.0
 
 - 新增 Token、API 估算费用和双显模式，适用于概览、图表、项目、任务、同期对比、CSV 和分享图片。

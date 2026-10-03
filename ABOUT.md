@@ -1,18 +1,17 @@
-# Knowken
+# Knowken 1.8.0
 
-- **版本：**1.7.0
-- **开发者：**Sense
-- **平台：**Windows x64、GNU/Linux x64
-- **下载：**[GitHub Releases](https://github.com/Sense-Uesugi/Knowken/releases)
+**Sense · Windows x64 / GNU/Linux x64 · 简体中文 / English / 日本語**
 
-Knowken 是一款本地 Codex 用量统计应用。它按日期、模型、项目和任务整理 Token 用量，并提供 API 费用估算、趋势比较、任务时间线、CSV 导出和分享图片。
+[GitHub Releases](https://github.com/Sense-Uesugi/Knowken/releases)
 
-支持简体中文、英文和日语，可自定义阅读外观，并将偏好保存在本机。
+Knowken 是本地 Codex 用量统计应用，按日期、模型、项目和任务查看 Token 与 API 估算费用，并提供代理树、缓存分析、本地价格表、模型费用模拟、每月 USD 目标、同期比较、时间线、CSV 和分享图片。偏好保存在本机。费用统一按当前目录估算；内置表 2026-10-03.1 核对日期为 2026-10-03，非实际账单、订阅费用或账号额度。未知金额不是免费；模拟不保证实际节省或相同质量，月末线性估算不保证最终费用。
 
-Knowken is a local Codex usage tracker by Sense. It organizes Token usage by date, model, project and task, with estimated API costs, period comparisons, task timelines, CSV exports and share images. It supports Chinese, English and Japanese, with appearance preferences saved locally.
+Knowken is a local Codex usage tracker by Sense, with Token/API cost views by date, model, project and task, agent trees, cache analysis, local price catalogs, model simulations, monthly USD goals, comparisons, timelines, CSV and share images. Preferences stay local. Estimates use the current catalog; bundled prices are 2026-10-03.1, checked October 3, 2026. They are not actual bills, subscription fees or account limits. Unknown costs are not free; simulation does not guarantee actual savings or equal quality, and linear projections do not guarantee final costs.
 
-Knowken は Sense が開発したローカルの Codex 使用量集計アプリです。日付・モデル・プロジェクト・タスク別のトークン集計に加え、API 推定費用、期間比較、タスクのタイムライン、CSV 出力、共有画像に対応しています。中国語・英語・日本語を選べ、外観設定は端末に保存されます。
+Knowken は Sense のローカル Codex 使用量集計アプリです。日付・モデル・プロジェクト・タスク別のトークン／API 推定費用、エージェントツリー、キャッシュ分析、ローカル料金表、モデル費用シミュレーション、月間 USD 目標、期間比較、タイムライン、CSV、共有画像を提供します。設定は端末に保存します。現在の料金表で推定し、内蔵表は 2026-10-03.1、確認日は 2026 年 10 月 3 日です。実際の請求額・契約料金・アカウント利用枠ではありません。料金不明は無料ではなく、シミュレーションは実際の節約や同等の品質を、線形推定は最終費用を保証しません。
 
-费用估算不代表实际账单。应用不上传对话或用量数据，不提供跨设备同步。两个发行包均未签名，系统要求及实测范围见 Release。
+只读本机现存日志，不上传会话、用量或价格文件，不跨设备同步，统计可能不完整。两个发行包均未签名；系统要求及实测范围见 Release。公开仓库只提供产品说明和完整第三方许可，源码不公开。
 
-公开仓库提供产品说明与第三方许可，应用源码不公开。第三方版权与许可独立保留。
+Existing local logs are read without uploading conversations, usage or price files. No cross-device sync; results may be incomplete. Both packages are unsigned. See the Release for requirements and tested scope. The public repository contains product documentation and complete third-party licenses; application source remains private.
+
+端末内の既存ログを読み取り、会話・使用量・料金ファイルを送信せず、端末間同期も行いません。集計は不完全な場合があります。両パッケージとも未署名で、動作条件と検証範囲は Release を参照してください。公開リポジトリは製品説明と第三者ライセンス全文のみで、ソースは非公開です。
