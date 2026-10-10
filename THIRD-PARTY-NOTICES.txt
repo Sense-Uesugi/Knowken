@@ -1,21 +1,22 @@
-Knowken 1.8.0
+Knowken 1.9.0
 Developer: Sense
 
-The original third-party copyright and license notices are retained
-separately from the Knowken developer information.
+Original third-party notices are retained separately from Knowken information.
 
 Node.js 24.19.0
-Node.js and its built-in components are included in the platform executables.
-Complete, unabridged upstream licenses and runtime provenance:
-Windows x64: licenses/Node.js-LICENSE.txt and licenses/Node.js-ORIGIN.json.
-GNU/Linux x64: licenses/linux-x64/Node.js-LICENSE.txt and
+The target executables include Node.js and its built-in components.
+Windows: licenses/Node.js-LICENSE.txt and licenses/Node.js-ORIGIN.json.
+GNU/Linux: licenses/linux-x64/Node.js-LICENSE.txt and
 licenses/linux-x64/Node.js-ORIGIN.json.
-The original license files are preserved byte for byte for each platform.
+The complete upstream license text is preserved without abridgement.
 
 esbuild
-The application may include small generated JavaScript helpers.
-Its MIT license and copyright notice are in licenses/esbuild-LICENSE.txt.
+Generated JavaScript helpers may be present in the application bundle.
+The MIT notice is retained in licenses/esbuild-LICENSE.txt.
 
-postject
-The MIT license is retained in licenses/linux-x64/postject-LICENSE.txt.
 postject and resedit are build tools, not runtime dependencies.
+The Linux postject MIT notice is retained in
+licenses/linux-x64/postject-LICENSE.txt.
+
+These are prepared material paths; final package manifests and runtime
+provenance must be checked against the exact accepted binaries before release.
