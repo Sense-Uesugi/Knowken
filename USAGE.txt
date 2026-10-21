@@ -1,33 +1,61 @@
-Knowken 1.9.0 · Sense · Windows x64 / GNU/Linux x64
-Knowken 1.9.0 发行资料。
-随附 Node.js 24.19.0，程序未签名；本地运行，无需 API Key。
+Knowken 2.0.0 · 使用说明 / Usage / 使い方
 
-简体中文
-1. 获取实际发行的完整包。Windows 解压到可写目录后双击 Knowken.exe；GNU/Linux 在可写且可执行目录运行 ./Knowken。
-2. 选择语言、字号、次要文字深浅，再查看九主题教程；可跳过或随时重看。
-3. 按日期、模型、项目和搜索筛选。统计时区在“更多筛选”或“设置 → 显示与外观”保存；“今天”跟随当地日期。
-4. 普通刷新与每 30 秒自动刷新先更新基础统计，运行记录后台整理；基础就绪后可查看任务、导出 CSV 和分享。点击任务查看四类详情，七项运行分析需点击“刷新分析”，同范围旧结果会保留并提示。
-5. 可导出 CSV 或预览分享 PNG，分享默认隐藏名称。费用是 USD 假设估算，不是账单。
-6. 长期历史不随源日志删除而清空，独立于页面刷新和统计缓存，默认在服务运行时每 5 分钟采集；设置中可暂停、导出、预览并确认合并 JSON。清除须单独确认并暂停采集，不删除原日志。
-7. 关闭网页后服务仍运行。Windows 用 Stop-Knowken.cmd／“停止 Knowken.vbs”；GNU/Linux 用 ./Knowken --stop。无桌面用 ./Knowken --no-browser 查看地址。
-升级前先导出历史 JSON 和当前价格表，再停止旧版并保留旧目录；不要复制整个 .local、运行状态或用量缓存。详细迁移与系统要求见包内 README.md。
+## 简体中文
 
-English
-1. Obtain an actually released complete package. On Windows, extract it to a writable folder and open Knowken.exe. On GNU/Linux, run ./Knowken from a writable, executable directory.
-2. Choose language and readability settings, then review the nine-topic tutorial. You can skip it or reopen it later.
-3. Filter dates, models, projects and tasks. Save the statistics time zone in More filters or Settings. Today follows the local calendar date.
-4. Manual refresh and 30-second automatic refresh make basic statistics available first while activity records are prepared in the background. You can then open tasks, export CSV and share. Select Refresh analysis to load the seven optional analyses; previous results for the same filters remain with a stale-results notice.
-5. Export CSV or preview a sharing PNG; names are hidden by default. USD costs are hypothetical estimates, not invoices.
-6. Collected history remains when source logs are deleted. Collection runs every five minutes while the service runs, independently of page refresh and the statistics cache. Pause, export, preview or confirm a JSON merge in Settings. Clearing requires confirmation and pauses collection; original logs remain intact.
-7. Closing the page leaves the service running. Stop with Stop-Knowken.cmd on Windows or ./Knowken --stop on GNU/Linux. Use --no-browser without a desktop.
-Before upgrading, export history and prices, then stop the old copy and retain its directory. Do not copy the entire .local directory, process state or usage cache. See the package README for migration and system requirements.
+筛选与阅读
+选择日期、模型、项目，或输入任务搜索词；在“更多筛选”调整日期范围、时区与会话合并。点击任务查看时间线、代理结构和统计详情。在“设置”调整语言、主题、字号、统计显示与用量目标，也可重看使用教程。
 
-日本語
-1. 実際に公開された完全なパッケージを取得します。Windows は書き込み可能なフォルダーに展開して Knowken.exe を開きます。GNU/Linux は書き込み・実行可能なディレクトリで ./Knowken を実行します。
-2. 言語と読みやすさを設定して、9 テーマのチュートリアルを確認します。スキップや再表示もできます。
-3. 日付、モデル、プロジェクト、タスクを絞り込みます。統計のタイムゾーンを詳細フィルターまたは設定に保存できます。「今日」は現地の日付に従います。
-4. 通常の更新と 30 秒ごとの自動更新では基本統計を先に表示し、実行記録をバックグラウンドで整理します。基本統計の準備後はタスク、CSV、共有を利用できます。7 項目の任意分析は「分析を更新」で読み込み、同じ条件の以前の結果には古い結果の表示が付きます。
-5. CSV と共有 PNG を保存できます。共有では名前を初期状態で非表示にします。USD の費用は仮の推計であり請求額ではありません。
-6. 収集済み履歴は元のログを削除しても残ります。ページ更新や統計キャッシュとは別に、サービス実行中は 5 分ごとに収集します。設定で停止、JSON の書き出し、プレビュー、確認後の統合ができます。消去には確認が必要で、その後収集を停止します。元のログは削除しません。
-7. ページを閉じてもサービスは続きます。Windows は Stop-Knowken.cmd、GNU/Linux は ./Knowken --stop で終了します。デスクトップがない場合は --no-browser を使用します。
-更新前に履歴と価格表を書き出してから、旧版を終了し、旧ディレクトリを保管してください。.local 全体、プロセス情報、用量キャッシュをコピーしないでください。移行と動作条件は README を参照してください。
+运行分析
+在首页展开“运行与用量分析”，或在任务详情选择同名分类，再点击“刷新分析”。从总览查看用量、费用估算、任务与模型排行、失败或中断轮次、工具已记录时长和记录关联情况，点击条目进入明细。缺失字段显示“未记录”。普通数据刷新后，按提示重新刷新分析。
+
+费用工具
+切换到 API 估算显示，或使用模型模拟比较方案；在“设置 → 价格表”查看、导入或导出价格。费用估算供参考，实际账单为准。“—”表示费用未知，“≥”表示仅能计算部分用量。
+
+导出与分享
+CSV 导出对应当前显示的筛选结果；若提示数据已变化，先刷新再导出。分享图片默认隐藏项目与任务名称，保存前可在预览中调整。
+
+历史与备份
+在“设置 → 数据与历史”立即采集、暂停采集、导出备份，或预览备份并确认合并。已采集历史可继续查看。需要保存最新用量时，先立即采集再导出备份；确认下载完成，并保管好备份文件。清除历史需要确认，也会暂停采集。
+
+升级
+先在旧版导出历史备份与当前价格表，再停止旧版并保留旧目录。将新版完整解压到新目录，预览历史备份，确认范围与数量后合并，按需导入价格表并重新调整偏好设置。启动与停止方法见包内 README.md。
+
+## English
+
+Filters and reading
+Choose dates, a model and a project, or search for a task. Use More filters for date ranges, time zones and session grouping. Open a task to view its timeline, agent relationships and statistics. Use Settings to adjust language, theme, text size, statistics display and usage targets, or revisit the tutorial.
+
+Activity analysis
+Expand Activity and usage on the home page, or select that category in task details, then choose Refresh analysis. The overview shows usage, cost estimates, top tasks and models, failed or interrupted turns, recorded tool durations and record associations. Select an entry for details. Missing fields show Not recorded. After a basic data refresh, follow the prompt to refresh analysis again.
+
+Cost tools
+Switch to API estimate display or compare choices with model simulation. View, import or export prices in Settings → Price table. Cost estimates are for reference; refer to your actual bill for charges. “—” means an unknown cost and “≥” means only part of the usage can be priced.
+
+Export and sharing
+CSV exports follow the filters and data currently displayed. If prompted that data has changed, refresh before exporting. Sharing images hide project and task names by default; adjust the preview before saving.
+
+History and backups
+Use Settings → Data and history to collect now, pause collection, export a backup, or preview a backup and confirm its merge. Collected history remains available. To include the latest usage, collect now before exporting. Check that the download has finished and retain the backup file. Clearing history requires confirmation and pauses collection.
+
+Upgrading
+Export a history backup and active prices from the old version, then stop it and keep its directory. Extract the complete new package into a new directory. Preview the history backup, check its range and count, then merge it. Import prices and adjust preferences as needed. See the package README.md for starting and stopping.
+
+## 日本語
+
+絞り込みと閲覧
+日付、モデル、プロジェクトを選択するか、タスクを検索します。「その他の絞り込み」で日付範囲、タイムゾーン、セッションのまとめ方を調整できます。タスクを開くとタイムライン、エージェント構造、統計を確認できます。「設定」で言語、テーマ、文字サイズ、統計表示、使用量目標を調整し、チュートリアルを再表示できます。
+
+実行分析
+ホームの「実行と使用量の分析」を開くか、タスク詳細で同名の分類を選び、「分析を更新」をクリックします。概要には使用量、費用推計、上位タスクとモデル、失敗・中断したターン、記録されたツール時間、記録の関連付けが表示されます。項目を選ぶと詳細へ移動できます。不足する項目は「記録なし」と表示します。データ更新後は案内に従って分析を更新してください。
+
+費用ツール
+API 推計表示に切り替えるか、モデルシミュレーションで候補を比較します。「設定 → 料金表」で価格を確認、取り込み、書き出しできます。費用推計は参考値です。実際の料金は請求額を確認してください。「—」は費用不明、「≥」は使用量の一部のみ計算できることを示します。
+
+書き出しと共有
+CSV は現在表示している絞り込み結果に対応します。データ変更の案内が出た場合は、更新してから書き出してください。共有画像ではプロジェクト名とタスク名を初期状態で隠します。保存前にプレビューで調整できます。
+
+履歴とバックアップ
+「設定 → データと履歴」で即時収集、収集の一時停止、バックアップの書き出し、プレビューと確認後の統合ができます。収集済みの履歴は引き続き閲覧できます。最新の使用量も保存するには、即時収集後にバックアップを書き出してください。ダウンロードの完了を確認し、ファイルを保管します。履歴の消去には確認が必要で、収集も一時停止します。
+
+アップグレード
+旧版から履歴のバックアップと現在の価格表を書き出し、旧版を終了してフォルダーを保管します。新版を新しいフォルダーに完全展開し、履歴バックアップの範囲と件数をプレビューで確認してから統合してください。必要に応じて価格表を取り込み、表示設定などを再設定します。起動と終了の方法はパッケージ内の README.md を参照してください。

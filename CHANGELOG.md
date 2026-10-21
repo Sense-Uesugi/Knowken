@@ -1,29 +1,49 @@
-# 更新记录
+# Knowken · 更新记录 / Changelog / 更新履歴
 
-## 1.9.0
+## 简体中文
 
-相对于已发行的 1.8.0，本版汇总长期历史、七项运行分析、界面及时区更新，并优化每 30 秒自动刷新体验。
+### 2.0.0
 
-### 刷新后更快继续使用
+- 新增分析总览：集中查看当前筛选的用量与费用估算、任务与模型排行、失败或中断轮次、工具已记录时长和记录关联情况，并点击查看明细。
+- 改善自动刷新：减少重复加载，阅读和操作期间可延后显示新结果，并提供检查状态与耗时提示。
+- 修复大型历史备份与恢复、压缩归档日志读取，以及 CSV 与页面显示数据不一致的问题。
 
-- 普通刷新和每 30 秒自动刷新先让基础统计就绪，运行记录继续后台整理；基础结果出现后即可查看任务、导出 CSV 和分享。
-- 减少日志与已保存历史的重复处理。自动刷新频率仍为每 30 秒，长期历史仍每 5 分钟采集。
-- 首页和任务中的七项运行分析按“刷新分析”加载；基础刷新保留同一筛选的旧结果并显示提示，改变筛选后重新分析。
+### 1.9.0
 
-### 长期保存与运行分析
+增加长期历史与备份恢复、七项运行分析、统计时区设置；优化自动刷新、任务详情、筛选和阅读设置。
 
-- 增加独立长期用量历史，已采集记录不会随源日志删除而清空；支持旧缓存校验迁入、历史 JSON 导出、预览与确认合并。暂停保留已有历史，清除需单独确认且不删除 Codex 原日志。
-- 提供逐轮费用、模型与推理强度、额度快照、任务与工具耗时、上下文与压缩、计价与日志覆盖、分叉与委派七项分析。
+### 1.8.0
 
-### 时区与操作体验
+提供 Windows x64 与 GNU/Linux x64 版，支持 API 费用估算、价格表导入、缓存费用分析、模型模拟、用量目标和代理结构。
 
-- 可保存统计时区或跟随系统；“今天”跨午夜刷新后跟随当地日期，近 7／30 天链接保留相对日期，夏令时按地区规则计算。
-- 四组设置、四类任务详情与九主题教程，支持三种语言、键盘操作和保存表格列宽。
-- 日期填写错误在字段旁提示，任务读取失败可原位重试，刷新完成后 CSV 对应当前筛选。
-- 减少价格设置与模型模拟的重复绘制，改善深色运行分析的阅读体验。
+## English
 
-程序保持本地运行、无需 API Key，随附 Node.js 24.19.0，未签名。内置价格表仍为 2026-10-03.1；本次没有重新核价。升级时请先导出历史与价格表，再停止旧版并保留旧目录，按包内说明迁移。
+### 2.0.0
 
-## 1.8.0
+- Added an analysis overview for filtered usage and cost estimates, top tasks and models, failed or interrupted turns, recorded tool durations and record associations, with links to details.
+- Improved automatic refresh with less repeated loading, deferred display of new results while reading or interacting, and check status and elapsed-time feedback.
+- Fixed large-history backup and restore, compressed log archive reading, and CSV exports that could differ from the displayed data.
 
-2026-10-03 已发行 Windows x64 和 GNU/Linux x64 包，包含 API 费用估算、价格 JSON、缓存费用分析、模型模拟、每月 USD 目标与代理树。原发行材料和验证记录保持冻结。
+### 1.9.0
+
+Added retained history with backup and restore, seven activity analyses and statistics time zone settings; improved automatic refresh, task details, filters and readability settings.
+
+### 1.8.0
+
+Provided Windows x64 and GNU/Linux x64 packages with API cost estimates, price-table import, cache cost analysis, model simulation, usage targets and agent relationships.
+
+## 日本語
+
+### 2.0.0
+
+- 分析の概要を追加しました。絞り込み条件に応じた使用量と費用推計、上位タスクとモデル、失敗・中断したターン、記録されたツール時間、記録の関連付けをまとめて表示し、詳細へ移動できます。
+- 自動更新の重複読み込みを減らし、閲覧・操作中は新しい結果の表示を後に回せるようにしました。確認状況と経過時間も表示します。
+- 大規模な履歴のバックアップと復元、圧縮されたログの読み取り、CSV と画面のデータが一致しない問題を修正しました。
+
+### 1.9.0
+
+履歴の保存とバックアップ・復元、7 項目の実行分析、統計タイムゾーン設定を追加しました。自動更新、タスク詳細、絞り込み、読みやすさの設定を改善しました。
+
+### 1.8.0
+
+Windows x64 と GNU/Linux x64 版を提供しました。API 費用推計、価格表の取り込み、キャッシュ費用分析、モデルシミュレーション、使用量目標、エージェント構造に対応しました。

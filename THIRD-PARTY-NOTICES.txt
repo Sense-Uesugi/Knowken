@@ -1,22 +1,15 @@
-Knowken 1.9.0
-Developer: Sense
+Knowken 2.0.0 — Third-party notices
 
-Original third-party notices are retained separately from Knowken information.
+Full third-party licenses and source information:
 
-Node.js 24.19.0
-The target executables include Node.js and its built-in components.
-Windows: licenses/Node.js-LICENSE.txt and licenses/Node.js-ORIGIN.json.
-GNU/Linux: licenses/linux-x64/Node.js-LICENSE.txt and
-licenses/linux-x64/Node.js-ORIGIN.json.
-The complete upstream license text is preserved without abridgement.
+Node.js
+  Windows: licenses/Node.js-LICENSE.txt
+           licenses/Node.js-ORIGIN.json
+  GNU/Linux: licenses/linux-x64/Node.js-LICENSE.txt
+             licenses/linux-x64/Node.js-ORIGIN.json
 
 esbuild
-Generated JavaScript helpers may be present in the application bundle.
-The MIT notice is retained in licenses/esbuild-LICENSE.txt.
+  licenses/esbuild-LICENSE.txt
 
-postject and resedit are build tools, not runtime dependencies.
-The Linux postject MIT notice is retained in
-licenses/linux-x64/postject-LICENSE.txt.
-
-These are prepared material paths; final package manifests and runtime
-provenance must be checked against the exact accepted binaries before release.
+postject (GNU/Linux)
+  licenses/linux-x64/postject-LICENSE.txt
